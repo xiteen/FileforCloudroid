@@ -1,0 +1,16 @@
+{
+   "subscribed_topics": [{"topic_name":"/camera/rgb/image_color","compression":"compressed"},{"topic_name":"camera/depth/image","compression":"compressedDepth"},{"topic_name":"/camera/rgb/camera_info","compression":"none"}],
+   "published_topics": [{"topic_name":"/rgbdslam/batch_clouds","compression":"none"},{"topic_name":"/tf","compression":"none"}],
+   "advertised_services": ["dynamic_map"],
+   "advertised_actions": [],
+   
+   "start_cmds": ["roslaunch rgbdsalm rgbdslam.launch"],
+
+   "external_lib_paths":["rgbdslam_v2/external"],
+
+   "mem_limit": "1073741824",
+   "memswap_limit" : "1073741824",
+   "cpushares":"100",
+   "cpusetcpus":"0,1"
+}
+
